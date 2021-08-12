@@ -1,0 +1,514 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="crm:war exploded" />
+    </artifacts-to-build>
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="2d7e4971-c0dd-4749-9149-bcde351b37cf" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/crm.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/readme.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/src/main/java/com/tanghaichao/crm/exception/LoginException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/src/main/java/com/tanghaichao/crm/exception/handler/GlobalExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/src/main/java/com/tanghaichao/crm/settings/dao/DicTypeDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/src/main/java/com/tanghaichao/crm/settings/dao/DicTypeDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/src/main/java/com/tanghaichao/crm/settings/dao/DicValueDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/src/main/java/com/tanghaichao/crm/settings/dao/DicValueDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/src/main/java/com/tanghaichao/crm/settings/dao/UserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/src/main/java/com/tanghaichao/crm/settings/dao/UserDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/src/main/java/com/tanghaichao/crm/settings/domain/DicType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/src/main/java/com/tanghaichao/crm/settings/domain/DicValue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/src/main/java/com/tanghaichao/crm/settings/domain/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/src/main/java/com/tanghaichao/crm/settings/service/DicService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/src/main/java/com/tanghaichao/crm/settings/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/src/main/java/com/tanghaichao/crm/settings/service/impl/DicServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/src/main/java/com/tanghaichao/crm/settings/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/src/main/java/com/tanghaichao/crm/settings/web/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/src/main/java/com/tanghaichao/crm/util/DateTimeUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/src/main/java/com/tanghaichao/crm/util/IpAddressUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/src/main/java/com/tanghaichao/crm/util/MD5Util.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/src/main/java/com/tanghaichao/crm/util/UUIDUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/src/main/java/com/tanghaichao/crm/vo/Pagination.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/src/main/java/com/tanghaichao/crm/web/filter/LoginFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/src/main/java/com/tanghaichao/crm/web/listener/SysInitListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/src/main/java/com/tanghaichao/crm/workbench/dao/ActivityDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/src/main/java/com/tanghaichao/crm/workbench/dao/ActivityDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/src/main/java/com/tanghaichao/crm/workbench/dao/ActivityRemarkDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/src/main/java/com/tanghaichao/crm/workbench/dao/ActivityRemarkDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/src/main/java/com/tanghaichao/crm/workbench/dao/ClueActivityRelationDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/src/main/java/com/tanghaichao/crm/workbench/dao/ClueActivityRelationDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/src/main/java/com/tanghaichao/crm/workbench/dao/ClueDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/src/main/java/com/tanghaichao/crm/workbench/dao/ClueDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/src/main/java/com/tanghaichao/crm/workbench/dao/ClueRemarkDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/src/main/java/com/tanghaichao/crm/workbench/dao/ClueRemarkDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/src/main/java/com/tanghaichao/crm/workbench/dao/ContactsActivityRelationDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/src/main/java/com/tanghaichao/crm/workbench/dao/ContactsActivityRelationDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/src/main/java/com/tanghaichao/crm/workbench/dao/ContactsDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/src/main/java/com/tanghaichao/crm/workbench/dao/ContactsDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/src/main/java/com/tanghaichao/crm/workbench/dao/ContactsRemarkDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/src/main/java/com/tanghaichao/crm/workbench/dao/ContactsRemarkDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/src/main/java/com/tanghaichao/crm/workbench/dao/CustomerDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/src/main/java/com/tanghaichao/crm/workbench/dao/CustomerDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/src/main/java/com/tanghaichao/crm/workbench/dao/CustomerRemarkDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/src/main/java/com/tanghaichao/crm/workbench/dao/CustomerRemarkDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/src/main/java/com/tanghaichao/crm/workbench/dao/TranDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/src/main/java/com/tanghaichao/crm/workbench/dao/TranDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/src/main/java/com/tanghaichao/crm/workbench/dao/TranHistoryDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/src/main/java/com/tanghaichao/crm/workbench/dao/TranHistoryDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/src/main/java/com/tanghaichao/crm/workbench/domain/Activity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/src/main/java/com/tanghaichao/crm/workbench/domain/ActivityRemark.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/src/main/java/com/tanghaichao/crm/workbench/domain/Clue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/src/main/java/com/tanghaichao/crm/workbench/domain/ClueActivityRelation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/src/main/java/com/tanghaichao/crm/workbench/domain/ClueRemark.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/src/main/java/com/tanghaichao/crm/workbench/domain/Contacts.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/src/main/java/com/tanghaichao/crm/workbench/domain/ContactsActivityRelation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/src/main/java/com/tanghaichao/crm/workbench/domain/ContactsRemark.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/src/main/java/com/tanghaichao/crm/workbench/domain/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/src/main/java/com/tanghaichao/crm/workbench/domain/CustomerRemark.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/src/main/java/com/tanghaichao/crm/workbench/domain/Tran.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/src/main/java/com/tanghaichao/crm/workbench/domain/TranHistory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/src/main/java/com/tanghaichao/crm/workbench/service/ActivityService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/src/main/java/com/tanghaichao/crm/workbench/service/ClueService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/src/main/java/com/tanghaichao/crm/workbench/service/TranService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/src/main/java/com/tanghaichao/crm/workbench/service/impl/ActivityServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/src/main/java/com/tanghaichao/crm/workbench/service/impl/ClueServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/src/main/java/com/tanghaichao/crm/workbench/service/impl/TranServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/src/main/java/com/tanghaichao/crm/workbench/web/controller/ActivityController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/src/main/java/com/tanghaichao/crm/workbench/web/controller/ClueController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/src/main/java/com/tanghaichao/crm/workbench/web/controller/TranController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/src/main/resources/Stage2Possibility.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/src/main/resources/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/src/main/resources/dispatcherServlet.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/src/main/resources/jdbc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/src/main/resources/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/src/main/resources/mybatis.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/src/main/webapp/image/IMG_7114.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/src/main/webapp/image/home.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/src/main/webapp/image/user-thumbnail.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/src/main/webapp/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/src/main/webapp/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/src/main/webapp/jquery/bootstrap-datetimepicker-master/css/bootstrap-datetimepicker.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/src/main/webapp/jquery/bootstrap-datetimepicker-master/js/bootstrap-datetimepicker.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/src/main/webapp/jquery/bootstrap-datetimepicker-master/locale/bootstrap-datetimepicker.zh-CN.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/src/main/webapp/jquery/bootstrap_3.3.0/css/bootstrap-theme.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/src/main/webapp/jquery/bootstrap_3.3.0/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/src/main/webapp/jquery/bootstrap_3.3.0/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/src/main/webapp/jquery/bootstrap_3.3.0/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/src/main/webapp/jquery/bootstrap_3.3.0/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/src/main/webapp/jquery/bootstrap_3.3.0/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/src/main/webapp/jquery/bootstrap_3.3.0/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/src/main/webapp/jquery/bootstrap_3.3.0/js/npm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/src/main/webapp/jquery/bs_pagination/en.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/src/main/webapp/jquery/bs_pagination/jquery.bs_pagination.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/src/main/webapp/jquery/bs_pagination/jquery.bs_pagination.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/src/main/webapp/jquery/bs_typeahead/bootstrap3-typeahead.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/src/main/webapp/jquery/jquery-1.11.1-min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/src/main/webapp/jquery/zTree_v3-master/css/zTreeStyle/img/diy/1_close.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/src/main/webapp/jquery/zTree_v3-master/css/zTreeStyle/img/diy/1_open.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/src/main/webapp/jquery/zTree_v3-master/css/zTreeStyle/img/diy/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/src/main/webapp/jquery/zTree_v3-master/css/zTreeStyle/img/diy/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/src/main/webapp/jquery/zTree_v3-master/css/zTreeStyle/img/diy/4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/src/main/webapp/jquery/zTree_v3-master/css/zTreeStyle/img/diy/5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/src/main/webapp/jquery/zTree_v3-master/css/zTreeStyle/img/diy/6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/src/main/webapp/jquery/zTree_v3-master/css/zTreeStyle/img/diy/7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/src/main/webapp/jquery/zTree_v3-master/css/zTreeStyle/img/diy/8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/src/main/webapp/jquery/zTree_v3-master/css/zTreeStyle/img/diy/9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/src/main/webapp/jquery/zTree_v3-master/css/zTreeStyle/img/line_conn.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/src/main/webapp/jquery/zTree_v3-master/css/zTreeStyle/img/loading.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/src/main/webapp/jquery/zTree_v3-master/css/zTreeStyle/img/zTreeStandard.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/src/main/webapp/jquery/zTree_v3-master/css/zTreeStyle/img/zTreeStandard.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/src/main/webapp/jquery/zTree_v3-master/css/zTreeStyle/zTreeStyle.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/src/main/webapp/jquery/zTree_v3-master/js/jquery.ztree.all.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/src/main/webapp/login.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/src/main/webapp/settings/dept/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/src/main/webapp/settings/dictionary/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/src/main/webapp/settings/dictionary/type/edit.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/src/main/webapp/settings/dictionary/type/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/src/main/webapp/settings/dictionary/type/save.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/src/main/webapp/settings/dictionary/value/edit.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/src/main/webapp/settings/dictionary/value/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/src/main/webapp/settings/dictionary/value/save.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/src/main/webapp/settings/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/src/main/webapp/settings/qx/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/src/main/webapp/settings/qx/user/detail.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/src/main/webapp/settings/qx/user/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/src/main/webapp/workbench/activity/detail.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/src/main/webapp/workbench/activity/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/src/main/webapp/workbench/chart/activity/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/src/main/webapp/workbench/chart/clue/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/src/main/webapp/workbench/chart/customerAndContacts/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/src/main/webapp/workbench/chart/transaction/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/src/main/webapp/workbench/clue/convert.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/src/main/webapp/workbench/clue/detail.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/src/main/webapp/workbench/clue/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/src/main/webapp/workbench/contacts/detail.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/src/main/webapp/workbench/contacts/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/src/main/webapp/workbench/customer/detail.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/src/main/webapp/workbench/customer/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/src/main/webapp/workbench/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/src/main/webapp/workbench/main/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/src/main/webapp/workbench/transaction/detail.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/src/main/webapp/workbench/transaction/edit.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/src/main/webapp/workbench/transaction/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/src/main/webapp/workbench/transaction/save.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/src/main/webapp/workbench/visit/detail.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/src/main/webapp/workbench/visit/editTask.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/src/main/webapp/workbench/visit/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/src/main/webapp/workbench/visit/saveTask.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm/src/test/java/com/tanghaichao/crm/MyTest01.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="spring-beans.schema" />
+        <option value="Jsp File" />
+        <option value="mybatis-config" />
+        <option value="mybatis-mapper" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="alwaysUpdateSnapshots" value="true" />
+        <option name="mavenHome" value="$PROJECT_DIR$/../../3_Maven/maven_work/apache-maven-3.3.9" />
+        <option name="userSettingsFile" value="E:\java\3_Maven\maven_work\apache-maven-3.3.9\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="MavenRunner">
+    <option name="jreName" value="1.8" />
+    <option name="vmOptions" value="-DarchetypeCatalog=internal" />
+  </component>
+  <component name="ProjectId" id="1w4caThjr4Wnw9WQXf3cVF8XaMn" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="jdk.selected.JAVA_MODULE" value="1.8" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/crm/src/main/java/com/tanghaichao/crm/settings/service" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/crm/src/main/resources" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.24703088" />
+    <property name="project.structure.side.proportion" value="0.34526315" />
+    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.tanghaichao.crm.workbench.service.impl" />
+      <recent name="com.tanghaichao.crm.settings.service.impl" />
+      <recent name="com.tanghaichao.crm.settings.service" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\java\Project\workspaceForCrm\crm\src\main\resources" />
+      <recent name="E:\java\Project\workspaceForCrm\crm\src\main\webapp\jquery" />
+      <recent name="E:\java\Project\workspaceForCrm\crm\src\main\java\com\tanghaichao\crm\settings\dao" />
+      <recent name="E:\java\Project\workspaceForCrm\crm\src\main\java\com\tanghaichao\crm\workbench\dao" />
+      <recent name="E:\java\Project\workspaceForCrm\crm\src\main\java\com\tanghaichao\crm\workbench\domain" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.tanghaichao.crm.settings.dao" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Tomcat Server.TomcatCrm">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyTest01.test01 (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="crm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tanghaichao.crm.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.tanghaichao.crm" />
+      <option name="MAIN_CLASS_NAME" value="com.tanghaichao.crm.MyTest01" />
+      <option name="METHOD_NAME" value="test01" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyTest01.test02" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="crm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tanghaichao.crm.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.tanghaichao.crm" />
+      <option name="MAIN_CLASS_NAME" value="com.tanghaichao.crm.MyTest01" />
+      <option name="METHOD_NAME" value="test02" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyTest01.test03" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="crm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tanghaichao.crm.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.tanghaichao.crm" />
+      <option name="MAIN_CLASS_NAME" value="com.tanghaichao.crm.MyTest01" />
+      <option name="METHOD_NAME" value="test03" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyTest01.test04" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="crm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tanghaichao.crm.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.tanghaichao.crm" />
+      <option name="MAIN_CLASS_NAME" value="com.tanghaichao.crm.MyTest01" />
+      <option name="METHOD_NAME" value="test04" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyTest01.test05" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
+      <module name="crm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tanghaichao.crm.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.tanghaichao.crm" />
+      <option name="MAIN_CLASS_NAME" value="com.tanghaichao.crm.MyTest01" />
+      <option name="METHOD_NAME" value="test05" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TomcatCrm" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.46" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="BROWSER_ID" value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
+      <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
+      <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
+      <deployment>
+        <artifact name="crm:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/crm" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="0782224c-d491-4fd8-8690-a0ff3ee0fb2f" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="63382" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Profile">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="crm:war exploded" />
+        </option>
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.MyTest01.test05" />
+      <item itemvalue="JUnit.MyTest01.test01 (1)" />
+      <item itemvalue="JUnit.MyTest01.test02" />
+      <item itemvalue="JUnit.MyTest01.test03" />
+      <item itemvalue="JUnit.MyTest01.test04" />
+      <item itemvalue="Tomcat Server.TomcatCrm" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.MyTest01.test04" />
+        <item itemvalue="JUnit.MyTest01.test03" />
+        <item itemvalue="JUnit.MyTest01.test02" />
+        <item itemvalue="JUnit.MyTest01.test01 (1)" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2d7e4971-c0dd-4749-9149-bcde351b37cf" name="Default Changelist" comment="" />
+      <created>1627721366927</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1627721366927</updated>
+      <workItem from="1627721368250" duration="14766000" />
+      <workItem from="1627785942841" duration="29956000" />
+      <workItem from="1627884433557" duration="21993000" />
+      <workItem from="1627957179965" duration="17185000" />
+      <workItem from="1628046952464" duration="842000" />
+      <workItem from="1628058127865" duration="930000" />
+      <workItem from="1628059095431" duration="18287000" />
+      <workItem from="1628145304823" duration="1735000" />
+      <workItem from="1628147070571" duration="37415000" />
+      <workItem from="1628304068513" duration="2149000" />
+      <workItem from="1628306243275" duration="25243000" />
+      <workItem from="1628403824585" duration="21324000" />
+      <workItem from="1628561725315" duration="26666000" />
+      <workItem from="1628650256983" duration="23377000" />
+      <workItem from="1628752842419" duration="1052000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/crm/src/main/java/com/tanghaichao/crm/workbench/service/impl/ClueServiceImpl.java</url>
+          <line>131</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/crm/src/main/java/com/tanghaichao/crm/workbench/service/impl/TranServiceImpl.java</url>
+          <line>65</line>
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory">
+        <watch expression="activityList.get(1).endDate" />
+        <watch expression="activityList.get(0).editBy" language="JAVA" />
+        <watch expression="tran.source" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/workspaceForCrm$TomcatCrm.ic" NAME="TomcatCrm Coverage Results" MODIFIED="1628597514799" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+</project>
