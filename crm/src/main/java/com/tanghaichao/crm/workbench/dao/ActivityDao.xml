@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.tanghaichao.crm.workbench.dao.ActivityDao">
+    <insert id="saveActivity">
+        insert into tbl_activity(id,owner,name,startDate,endDate,cost,description,createTime,createBy)
+        values (#{id},#{owner},#{name},#{startDate},#{endDate},#{cost},#{description},#{createTime},#{createBy})
+    </insert>
+
+    <select id="getTotalByCondition" resultType="int">
+        select count(*)
+        from tbl_activity a
+        join tbl_user u
+        on a.owner=u.id
+        <where>
+            <if test="activity.name!=null and activity.name!=''">
+                a.name like '%' #{activity.name} '%'
+            </if>
+            <if test="activity.owner!=null and activity.name!=''">
+                and u.name like '%' #{activity.owner} '%'
+            </if>
+            <if test="activity.startDate!=null and activity.startDate!=''">
+                and a.startDate &gt; #{activity.startDate}
+            </if>
+            <if test="activity.endDate!=null and activity.endDate!=''">
+                and a.startDate &lt; #{activity.startDate}
+            </if>
+        </where>
+    </select>
+
+    <select id="getActivityListByCondition" resultType="Activity">
+        select
+        a.id,
+        a.name,
+        u.name as owner,
+        a.startDate,
+        a.endDate
+        from tbl_activity a
+        join tbl_user u
+        on a.owner=u.id
+        <where>
+            <if test="activity.name!=null and activity.name!=''">
+                a.name like '%' #{activity.name} '%'
+            </if>
+            <if test="activity.owner!=null and activity.name!=''">
+                and u.name like '%' #{activity.owner} '%'
+            </if>
+            <if test="activity.startDate!=null and activity.startDate!=''">
+                and a.startDate &gt; #{activity.startDate}
+            </if>
+            <if test="activity.endDate!=null and activity.endDate!=''">
+                and a.endDate &lt; #{activity.endDate}
+            </if>
+        </where>
+        order by a.createTime desc
+        limit #{skipCount},#{pageSize}
+    </select>
+
+    <delete id="delete">
+        delete from tbl_activity
+        where id in
+        <foreach collection="array" item="aid" open="(" close=")" separator=",">
+            #{aid}
+        </foreach>
+    </delete>
+
+    <select id="getActivityById" resultType="Activity">
+        select * from tbl_activity where id=#{id}
+    </select>
+
+    <update id="update">
+        update tbl_activity
+        set owner=#{owner},
+            name=#{name},
+            startDate=#{startDate},
+            endDate=#{endDate},
+            cost=#{cost},
+            description=#{description},
+            editTime=#{editTime},
+            editBy=#{editBy}
+        where id=#{id}
+    </update>
+
+    <select id="detail" resultType="Activity">
+        select
+            a.id,
+            u.name as owner,
+            a.name,
+            a.startDate,
+            a.endDate,
+            a.cost,
+            a.description,
+            a.createTime,
+            a.createBy,
+            a.editTime,
+            a.editBy
+        from tbl_activity a
+        join tbl_user u
+        on a.owner=u.id
+        where a.id=#{id}
+    </select>
+
+    <select id="getActivityListByAid" resultType="Activity">
+        select
+        a.id,
+        u.name owner,
+        a.name,
+        a.startDate,
+        a.endDate
+
+        from tbl_activity a
+        join tbl_user u
+        on a.owner=u.id
+        where a.id in
+        <foreach collection="list" open="(" close=")" item="carList" separator=",">
+            #{carList.activityId}
+        </foreach>
+    </select>
+
+    <select id="getActivityNotRelationList" resultType="Activity">
+        select
+        a.id,
+        u.name owner,
+        a.name,
+        a.startDate,
+        a.endDate
+
+        from tbl_activity a
+        join tbl_user u
+        on a.owner=u.id
+        <where>
+            <if test="name!=null and name!=''">
+                a.name like '%' #{name} '%'
+            </if>
+            <if test="carList!=null and carList.size()!=0">
+                and a.id not in
+                <foreach collection="carList" open="(" close=")" item="carList" separator=",">
+                    #{carList.activityId}
+                </foreach>
+            </if>
+        </where>
+    </select>
+
+    <select id="getActivityList" resultType="Activity">
+        select
+        a.id,
+        a.name,
+        u.name owner,
+        a.startDate,
+        a.endDate
+        from tbl_activity a
+        join tbl_user u
+        on a.owner = u.id
+        where a.name like '%' #{aname} '%'
+    </select>
+</mapper>

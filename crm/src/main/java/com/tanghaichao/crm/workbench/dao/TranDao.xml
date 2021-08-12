@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.tanghaichao.crm.workbench.dao.TranDao">
+    <insert id="save">
+        insert into tbl_tran
+        (
+            id,
+            owner,
+            money,
+            name,
+            expectedDate,
+            customerId,
+            stage,
+            type,
+            source,
+            activityId,
+            contactsId,
+            createBy,
+            createTime,
+            description,
+            contactSummary,
+            nextContactTime
+
+        )
+        values
+        (
+            #{id},
+            #{owner},
+            #{money},
+            #{name},
+            #{expectedDate},
+            #{customerId},
+            #{stage},
+            #{type},
+            #{source},
+            #{activityId},
+            #{contactsId},
+            #{createBy},
+            #{createTime},
+            #{description},
+            #{contactSummary},
+            #{nextContactTime}
+        )
+    </insert>
+
+    <select id="getTranList" resultType="Tran">
+        select
+            t.id,
+            u.name owner,
+            t.money,
+            t.name,
+            t.expectedDate,
+            t.customerId,
+            t.stage,
+            t.type,
+            t.source,
+            t.activityId,
+            t.contactsId,
+            t.createBy,
+            t.createTime,
+            t.editBy,
+            t.editTime,
+            t.description,
+            t.contactSummary,
+            t.nextContactTime
+        from tbl_tran t
+        join tbl_user u
+        on t.owner=u.id
+
+    </select>
+
+    <select id="getCustomerNameByCid" resultType="string">
+        select c.name
+        from tbl_tran t
+        join tbl_customer c
+        on t.customerId=c.id
+        where t.customerId=#{customerId} limit 1
+    </select>
+
+    <select id="getContactsNameByCid" resultType="string">
+        select c.fullname
+        from tbl_tran t
+        join tbl_contacts c
+        on t.contactsId=c.id
+        where t.contactsId=#{contactsId} limit 1
+    </select>
+
+    <select id="getCustomerName" resultType="String">
+        select name from tbl_customer where name like '%' #{name} '%'
+    </select>
+
+    <select id="getTranById" resultType="Tran">
+        select
+            t.id,
+            u.name owner,
+            t.money,
+            t.name,
+            t.expectedDate,
+            t.customerId,
+            t.stage,
+            t.type,
+            t.source,
+            a.name activityId,
+            t.contactsId,
+            t.createBy,
+            t.createTime,
+            t.editBy,
+            t.editTime,
+            t.description,
+            t.contactSummary,
+            t.nextContactTime
+        from tbl_tran t
+        join tbl_user u
+        on t.owner=u.id
+        left join tbl_activity a
+        on t.activityId=a.id
+        where t.id=#{id}
+    </select>
+
+    <update id="changeStage">
+        update tbl_tran set stage=#{stage},editBy=#{editBy},editTime=#{editTime} where id=#{id}
+    </update>
+</mapper>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
